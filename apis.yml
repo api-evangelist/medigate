@@ -1,8 +1,29 @@
 aid: medigate
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/medigate.png
 name: Medigate
-description: 'Medigate is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: >-
+  Medigate was a healthcare IoT / connected-medical-device cybersecurity company
+  (headquartered in Brooklyn, NY, backed by Partech and others) that built the
+  first security platform dedicated to healthcare IoT — device discovery, risk
+  assessment, and clinically-aware network segmentation for hospitals. Claroty
+  completed its acquisition of Medigate on 2022-01-10 and folded the product into
+  "Claroty xDome for Healthcare"; the standalone brand is retired and medigate.io
+  now redirects to claroty.com. A residual customer-facing REST API remains live
+  at api.medigate.io (with a password-gated interactive reference at
+  api.medigate.io/docs) that integrations use to pull device inventory, device
+  groups, and device risk scores.
 url: https://raw.githubusercontent.com/api-evangelist/medigate/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,18 +31,61 @@ x-backed-by:
 - partech
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-status: acquired
+x-acquired-by: claroty
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Infrastructure Saas
-apis: []
+- Cybersecurity
+- Healthcare
+- Medical Devices
+- Internet of Things
+- Device Security
+- Network Security
+apis:
+- name: Medigate API
+  description: >-
+    Customer-facing REST API for the Medigate (now Claroty xDome for Healthcare)
+    device-security platform. Documents two versions — V1 (HTTP basic auth) and
+    V2 (API token) — used to pull the Device List, Device Groups, and device Risk
+    scores. The interactive reference at api.medigate.io/docs is access-gated
+    (password required), so no public OpenAPI is available.
+  humanURL: https://api.medigate.io/docs
+  baseURL: https://api.medigate.io
+  properties:
+  - type: Authentication
+    url: authentication/medigate-authentication.yml
+common:
+- type: Website
+  url: https://claroty.com/
+- type: APIReference
+  url: https://api.medigate.io/docs
+- type: Authentication
+  url: authentication/medigate-authentication.yml
+- type: Lifecycle
+  url: lifecycle/medigate-lifecycle.yml
+- type: DomainSecurity
+  url: security/medigate-domain-security.yml
+- type: VulnerabilityDisclosure
+  url: security/medigate-vulnerability-disclosure.yml
+- type: Security
+  url: https://web-assets.claroty.com/team82-disclosure-policy.pdf
+- type: TrustCenter
+  url: security/medigate-trust-center.yml
+- type: Compliance
+  url: https://claroty.com/trust
+- type: PrivacyPolicy
+  url: https://claroty.com/privacy-policy
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-common:
-- type: Website
-  url: http://www.medigate.io/
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 6
+  pass: local-v1
