@@ -1,0 +1,24 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of medigate.io /.well-known/*
+host: https://medigate.io
+note: >-
+  medigate.io (the acquired Medigate brand) publishes no /.well-known discovery
+  surface of its own — every probed path returns HTTP 302 redirecting to
+  https://claroty.com/, and claroty.com itself serves no security.txt,
+  openid-configuration, or api-catalog. The customer API host api.medigate.io is
+  access-gated and was not probed unauthenticated. This is a valid, expected
+  empty result for a defunct/acquired standalone brand.
+documents:
+- path: /.well-known/security.txt
+  status: 302
+  redirects_to: https://claroty.com/
+- path: /.well-known/openid-configuration
+  status: 302
+  redirects_to: https://claroty.com/
+- path: /.well-known/oauth-authorization-server
+  status: 302
+  redirects_to: https://claroty.com/
+- path: /llms.txt
+  status: 302
+  redirects_to: https://claroty.com/

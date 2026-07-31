@@ -1,0 +1,43 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.axonius.com/docs/medigate
+docs: https://docs.axonius.com/docs/medigate
+note: >-
+  Medigate (now Claroty) exposes a customer-facing REST API for its healthcare
+  device-security platform at api.medigate.io. The interactive API reference at
+  https://api.medigate.io/docs is password-gated ("Contact support to get a
+  password for the documentation") so no public OpenAPI is available; the auth
+  model below is reconstructed from published third-party integration guides
+  (Axonius, CrowdStrike LogScale) that document how to connect to the Medigate
+  API. Two versions are documented: V1 (HTTP basic username/password) and V2
+  (API token generated in the Medigate management console).
+host: api.medigate.io
+summary:
+  types:
+  - http
+  - apiKey
+  api_key_in:
+  - header
+  oauth2_flows: []
+schemes:
+- name: MedigateBasicV1
+  type: http
+  scheme: basic
+  api_version: v1
+  description: >-
+    Medigate API V1 authenticates with the console username and password over
+    HTTPS to api.medigate.io.
+  sources:
+  - https://docs.axonius.com/docs/medigate
+- name: MedigateApiTokenV2
+  type: apiKey
+  in: header
+  api_version: v2
+  description: >-
+    Medigate API V2 authenticates with an API token generated inside the
+    Medigate management console and presented on requests to api.medigate.io.
+    Integrations use it to pull the Device List, Device Groups, and device
+    Risk scores.
+  sources:
+  - https://docs.axonius.com/docs/medigate
+  - https://library.humio.com/integrations/integrations-medigate.html

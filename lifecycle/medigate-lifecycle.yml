@@ -1,0 +1,34 @@
+generated: '2026-07-20'
+method: searched
+source: https://claroty.com/press-releases/claroty-completes-acquisition-of-healthcare-iot-security-leader-medigate
+summary: >-
+  Medigate no longer exists as an independent company. Claroty completed its
+  acquisition of Medigate on 2022-01-10, and the standalone Medigate brand and
+  product were folded into Claroty as "Claroty xDome for Healthcare". The
+  marketing domain medigate.io now 302-redirects to claroty.com. A residual
+  customer-facing REST API remains live at api.medigate.io (its interactive docs
+  at api.medigate.io/docs are password-gated), used by healthcare-security
+  integrations to pull device inventory and risk data.
+status: acquired
+acquired_by:
+  company: Claroty
+  date: '2022-01-10'
+  announcement: https://claroty.com/press-releases/claroty-completes-acquisition-of-healthcare-iot-security-leader-medigate
+successor_product:
+  name: Claroty xDome for Healthcare
+  url: https://claroty.com/healthcare-cybersecurity/xdome-for-healthcare
+brand_sunset:
+  legacy_domain: https://medigate.io/
+  redirects_to: https://claroty.com/
+  observed: '2026-07-20'
+versioning:
+  scheme: uri-versioned
+  versions:
+  - v1
+  - v2
+  note: >-
+    Integration docs reference Medigate API V1 (basic auth) and V2 (API token)
+    on api.medigate.io. No public versioning/deprecation policy is published for
+    the API; the interactive reference is access-gated.
+status_page: null
+deprecated_operations: []
