@@ -64,6 +64,55 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Medigate is a company surfaced as a portfolio company of partech and added to the API Evangelist network as a stub for enrichment. Sector: Infrastructure SaaS. This profile is a lead awaiting the enrichment pipeline.
+> **Acquired or rebranded.** This company was acquired, merged or renamed. Its API, if it still exists, is offered under another name. This profile is kept as a historical record and is not maintained or rated.
 
-Backed by: partech — http://www.medigate.io/
+Medigate was a healthcare IoT / connected-medical-device cybersecurity company (headquartered in Brooklyn, NY, backed by Partech and others) that built the first security platform dedicated to healthcare IoT — device discovery, risk assessment, and clinically-aware network segmentation for hospitals. Claroty completed its acquisition of Medigate on 2022-01-10 and folded the product into "Claroty xDome for Healthcare"; the standalone brand is retired and medigate.io now redirects to claroty.com. A residual customer-facing REST API remains live at api.medigate.io (with a password-gated interactive reference at api.medigate.io/docs) that integrations use to pull device inventory, device groups, and device risk scores.
+
+**Areas:** Company · Infrastructure Saas · Cybersecurity · Healthcare · Medical Devices · IoT · Device Security · Network Security
+
+## Medigate on APIs.io (historical record)
+
+Everything profiled for Medigate is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/medigate/](https://apis.io/providers/medigate/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Medigate API](https://apis.io/apis/medigate/medigate-api/) — Customer-facing REST API for the Medigate (now Claroty xDome for Healthcare) device-security platform. Documents two versions — V1 (HTTP basic auth) and V2…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (4)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Medigate Authentication](https://apis.io/security/medigate/medigate-authentication/)
+- [Medigate Domain Security](https://apis.io/security/medigate/medigate-domain-security/)
+- [Medigate Trust Center](https://apis.io/security/medigate/medigate-trust-center/)
+- [Medigate Vulnerability Disclosure](https://apis.io/security/medigate/medigate-vulnerability-disclosure/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://claroty.com/)
+- [API reference](https://api.medigate.io/docs)
+- [Security](https://web-assets.claroty.com/team82-disclosure-policy.pdf)
+- [Compliance](https://claroty.com/trust)
+- [Privacy policy](https://claroty.com/privacy-policy)
+
+## API Evangelist rating
+
+**Not rated** — this company is recorded as acquired or rebranded, so no score is published. If it is in fact operating, say so on this repository and it will be re-profiled.
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Medigate: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/medigate/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
